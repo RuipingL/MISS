@@ -1,4 +1,7 @@
 # MISS
+
+### Fourier Prompt Tuning for Modality-Incomplete Scene Segmentation [[PDF]](https://arxiv.org/pdf/2401.16923)
+
 In this work, we establish a task called Modality-Incomplete Scene Segmentation (MISS), which encompasses both system-level modality absence and sensor-level modality errors. 
 <p align="center">
   <img src="figs/MISS.png" width="400">
@@ -10,7 +13,7 @@ We introduce a Missing-aware Modal Switch (MMS) strategy to proactively manage m
 </div>
 
 ## Citation
-If you use our OpenSU, please cite
+If you use our method in your project, please cite
 ```
 @article{liu2024fourier,
   title={Fourier Prompt Tuning for Modality-Incomplete Scene Segmentation},
