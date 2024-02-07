@@ -8,3 +8,15 @@ We introduce a Missing-aware Modal Switch (MMS) strategy to proactively manage m
   <img src="figs/MMS.png" alt="image1" width="400">
   <img src="figs/FPT.png" alt="image2" width="400">
 </div>
+
+## Citation
+If you use our OpenSU, please cite
+```
+@article{liu2024fourier,
+  title={Fourier Prompt Tuning for Modality-Incomplete Scene Segmentation},
+  author={Liu, Ruiping and Zhang, Jiaming and Peng, Kunyu and Chen, Yufan and Cao, Ke and Zheng, Junwei and Sarfraz, M Saquib and Yang, Kailun and Stiefelhagen, Rainer},
+  journal={arXiv preprint arXiv:2401.16923},
+  year={2024}
+}
+
+```
