@@ -29,6 +29,7 @@ python -m torch.distributed.launch --nproc_per_node=4 --use_env tools/train_prom
 
 ## Evaluation
 Please download the following weights to the folders `checkpoints/fpt/` and `checkpoints/fpt_mms/`
+
 DeLIVER:
 |Model|mIoU(%)|weight|
 |:----|:------|:-----|
