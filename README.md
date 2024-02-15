@@ -16,7 +16,8 @@ We introduce a Missing-aware Modal Switch (MMS) strategy to proactively manage m
 Please refer to [DeLIVER](https://github.com/jamycheung/DELIVER)
 
 ## Training
-Please download the [MultiMAE](https://drive.google.com/file/d/1reL9dvGr_kGPk73HeFdzziS7lIbi2PDg/view?usp=sharing) pretrained weights to the folder `checkpoints/pretrained/`
+Please download the [MultiMAE](https://drive.google.com/file/d/1reL9dvGr_kGPk73HeFdzziS7lIbi2PDg/view?usp=sharing) pretrained weights to the folder `checkpoints/pretrained/`.
+When training with MMS, change `MISS` in configuration files from False to True.
 ```
 cd path/to/MISS
 conda activate cmnext
