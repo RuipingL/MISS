@@ -33,14 +33,14 @@ Please download the following weights to the folders `checkpoints/fpt/` and `che
 DeLIVER:
 |Model|mIoU(%)|weight|
 |:----|:------|:-----|
-|FPT|57.81|Google Drive|
-|FPT(MMS)|57.38|Google Drive|
+|FPT|57.81|[Google Drive](https://drive.google.com/file/d/1zP8tYiHzzYcNT3BQ2d_fk2WXL13EI_SZ/view?usp=sharing)|
+|FPT(MMS)|57.38|[Google Drive](https://drive.google.com/file/d/1OKhTrUp7siz1MNSckRSzVAfBdKlUp_-w/view?usp=sharing)|
 
 Cityscapes:
 |Model|mIoU(%)|weight|
 |:----|:------|:-----|
-|FPT|75.16|Google Drive|
-|FPT(MMS)|75.47|Google Drive|
+|FPT|75.16|[Google Drive](https://drive.google.com/file/d/1Un5xpcvILNYF4vBMLptJuDOQnX3uueKa/view?usp=sharing)|
+|FPT(MMS)|75.47|[Google Drive](https://drive.google.com/file/d/1BG3C6qA1hrutwCppQURfxXfst2qaMC5X/view?usp=sharing)|
 
 ```
 cd path/to/DELIVER
