@@ -17,7 +17,16 @@ Refer to [DeLiVER](https://github.com/jamycheung/DELIVER) for environment instal
 
 Generate the RGBD Cityscapes dataset according to [RGBD_Semantic_Segmentation_PyTorch](https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch/issues/1#issuecomment-684875832).
 
+`dataset` folder should be structured as:
+```
+DELIVER
+|── depth
+|—— img
+|—— missing
+└── semantic
+cityscapes
 
+```
 
 ## Training
 Please download the [MultiMAE](https://drive.google.com/file/d/1reL9dvGr_kGPk73HeFdzziS7lIbi2PDg/view?usp=sharing) pretrained weights to the folder `checkpoints/pretrained/`.
