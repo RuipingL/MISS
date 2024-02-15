@@ -15,7 +15,7 @@ We introduce a Missing-aware Modal Switch (MMS) strategy to proactively manage m
 ## Preparation
 Refer to [DeLiVER](https://github.com/jamycheung/DELIVER) for environment installation and downloading DeLiVER dataset.
 
-Calculate the depth map of Cityscapes dataset according to [RGBD_Semantic_Segmentation_PyTorch](https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch/issues/1#issuecomment-684875832) and store them as `.npy` files.
+Calculate the depth maps for the Cityscapes dataset according to the instructions in [RGBD_Semantic_Segmentation_PyTorch](https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch/issues/1#issuecomment-684875832) and store them as `.npy` files.
 
 `dataset` folder should be structured as:
 ```
@@ -31,7 +31,7 @@ cityscapes
 ├── missing
 └── gtFine
 ```
-
+The `missing` folders contain black images with the same resolution and filenames as those in other modalities.
 ## Training
 Please download the [MultiMAE](https://drive.google.com/file/d/1reL9dvGr_kGPk73HeFdzziS7lIbi2PDg/view?usp=sharing) pretrained weights to the folder `checkpoints/pretrained/`.
 
