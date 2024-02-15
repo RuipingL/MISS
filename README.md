@@ -28,6 +28,18 @@ python -m torch.distributed.launch --nproc_per_node=4 --use_env tools/train_prom
 ```
 
 ## Evaluation
+DeLIVER:
+|Model|mIoU(%)|weight|
+|:----|:------|:-----|
+|FPT|57.81|Google Drive|
+|FPT(MMS)|57.38|Google Drive|
+
+Cityscapes:
+|Model|mIoU(%)|weight|
+|:----|:------|:-----|
+|FPT|75.16|Google Drive|
+|FPT(MMS)|75.47|Google Drive|
+
 ```
 cd path/to/DELIVER
 conda activate cmnext
