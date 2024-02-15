@@ -12,6 +12,27 @@ We introduce a Missing-aware Modal Switch (MMS) strategy to proactively manage m
   <img src="figs/FPT.png" alt="image2" width="400">
 </div>
 
+## Environment
+Please refer to [DeLIVER](https://github.com/jamycheung/DELIVER)
+
+## Training
+```
+cd path/to/MISS
+conda activate cmnext
+export PYTHONPATH="path/to/MISS"
+python -m torch.distributed.launch --nproc_per_node=4 --use_env tools/train_prompt.py --cfg configs/config_fpt_deliver.yaml
+python -m torch.distributed.launch --nproc_per_node=4 --use_env tools/train_prompt.py --cfg configs/config_fpt_cityscapes.yaml
+```
+
+## Evaluation
+```
+cd path/to/DELIVER
+conda activate cmnext
+export PYTHONPATH="path/to/DELIVER"
+CUDA_VISIBLE_DEVICES=0 python tools/val_mm.py --cfg configs/config_fpt_deliver.yaml
+CUDA_VISIBLE_DEVICES=0 python tools/val_mm.py --cfg configs/config_fpt_cityscapes.yaml
+```
+
 ## Citation
 If you use our method in your project, please consider referencing
 ```
