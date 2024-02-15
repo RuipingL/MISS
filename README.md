@@ -12,8 +12,12 @@ We introduce a Missing-aware Modal Switch (MMS) strategy to proactively manage m
   <img src="figs/FPT.png" alt="image2" width="300">
 </div>
 
-## Environment
-Please refer to [DeLIVER](https://github.com/jamycheung/DELIVER)
+## Preparation
+Refer to [DeLiVER](https://github.com/jamycheung/DELIVER) for environment installation and downloading DeLiVER dataset.
+
+Generate the RGBD Cityscapes dataset according to [RGBD_Semantic_Segmentation_PyTorch](https://github.com/charlesCXK/RGBD_Semantic_Segmentation_PyTorch/issues/1#issuecomment-684875832).
+
+
 
 ## Training
 Please download the [MultiMAE](https://drive.google.com/file/d/1reL9dvGr_kGPk73HeFdzziS7lIbi2PDg/view?usp=sharing) pretrained weights to the folder `checkpoints/pretrained/`.
