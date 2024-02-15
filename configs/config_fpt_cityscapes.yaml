@@ -1,0 +1,59 @@
+DEVICE          : cuda              # device used for training and evaluation (cpu, cuda, cuda0, cuda1, ...)
+SAVE_DIR        : 'output_fpt'          # output folder name used for saving the model, logs and inference results
+MODEL:
+  NAME          : MultiMAE                                            # name of the model you are using
+  BACKBONE      : FPT-B                                        # model variant
+  PRETRAINED    : 'checkpoints/pretrained/multimae.pth'  # backbone model's weight 
+  RESUME        : ''                                                # checkpoint file 
+
+DATASET:
+  NAME          : CityScapes                                          # dataset name to be trained with (camvid, cityscapes, ade20k)
+  ROOT          : 'dataset/cityscapes'                                   # dataset root path
+  IGNORE_LABEL  : 255
+  # MODALS        : ['img']
+  MODALS        : ['img', 'depth']
+  MISS          : true
+
+TRAIN:
+  IMAGE_SIZE    : [512, 1024]    # training image size in (h, w)
+  BATCH_SIZE    : 1               # batch size used to train
+  EPOCHS        : 200             # number of epochs to train
+  EVAL_START    : 0             # evaluation interval start
+  EVAL_INTERVAL : 1               # evaluation interval during training
+  AMP           : false           # use AMP in training
+  DDP           : true            # use DDP training
+
+LOSS:
+  NAME          : OhemCrossEntropy          # loss function name 
+  CLS_WEIGHTS   : false            # use class weights in loss calculation
+
+OPTIMIZER:
+  NAME          : adamw           # optimizer name
+  LR            : 0.0001         # initial learning rate used in optimizer
+  WEIGHT_DECAY  : 0.05            # decay rate used in optimizer
+
+SCHEDULER:
+  # NAME          : warmuppolylr    # scheduler name
+  NAME          : warmupcosinelr
+  POWER         : 0.9             # scheduler power
+  WARMUP        : 1              # warmup epochs used in scheduler
+  WARMUP_RATIO  : 0.1             # warmup ratio
+  
+
+EVAL:
+  # MODEL_PATH    : 'checkpoints/fpt_mms/fpt_mms_cityscapes.pth'
+  MODEL_PATH    : 'checkpoints/fpt/fpt_cityscapes.pth'
+  IMAGE_SIZE    : [512, 1024]                            # evaluation image size in (h, w)        
+  BATCH_SIZE    : 4                                       # batch size used to train               
+  MSF: 
+    ENABLE      : false                                   # multi-scale and flip evaluation  
+    FLIP        : true                                    # use flip in evaluation  
+    SCALES      : [0.5, 0.75, 1.0, 1.25, 1.5, 1.75]       # scales used in MSF evaluation                
+
+
+TEST:
+  # MODEL_PATH    : 'checkpoints/fpt_mms/fpt_mms_cityscapes.pth'
+  MODEL_PATH    : 'checkpoints/fpt/fpt_cityscapes.pth'
+  FILE          : 'dataset/cityscapes'                          # filename or foldername 
+  IMAGE_SIZE    : [512, 1024]                            # inference image size in (h, w)
+  OVERLAY       : false                                   # save the overlay result (image_alpha+label_alpha)
