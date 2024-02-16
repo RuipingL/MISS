@@ -12,6 +12,7 @@ We introduce a Missing-aware Modal Switch (MMS) strategy to proactively manage m
   <img src="figs/FPT.png" alt="image2" width="300">
 </div>
 
+To harness the benefits of adapters and minimize the number of parameters, we integrate our Fourier Prompt module into the AdaptFormer framework. FPT outperforms AdaptFormer with any number of channels in bottlenecks. Additionally, our MMS maintains the performance of both methods when all modalities are present and significantly enhances performance under conditions with missing modalities.
 ## Preparation
 Refer to [DeLiVER](https://github.com/jamycheung/DELIVER) for environment installation and downloading DeLiVER dataset.
 
