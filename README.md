@@ -61,9 +61,9 @@ Cityscapes:
 |FPT(MMS)|75.47|[Google Drive](https://drive.google.com/file/d/1BG3C6qA1hrutwCppQURfxXfst2qaMC5X/view?usp=sharing)|
 
 ```
-cd path/to/DELIVER
+cd path/to/MISS
 conda activate cmnext
-export PYTHONPATH="path/to/DELIVER"
+export PYTHONPATH="path/to/MISS"
 CUDA_VISIBLE_DEVICES=0 python tools/val_mm.py --cfg configs/config_fpt_deliver.yaml
 CUDA_VISIBLE_DEVICES=0 python tools/val_mm.py --cfg configs/config_fpt_cityscapes.yaml
 ```
