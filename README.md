@@ -1,4 +1,4 @@
-# MISS (IV 2024)
+# MISS (IEEE IV 2024)
 
 ### Fourier Prompt Tuning for Modality-Incomplete Scene Segmentation [[PDF]](https://arxiv.org/pdf/2401.16923)
 
