@@ -71,11 +71,15 @@ CUDA_VISIBLE_DEVICES=0 python tools/val_mm.py --cfg configs/config_fpt_cityscape
 ## Citation
 If you use our method in your project, please consider referencing
 ```
-@article{liu2024fourier,
-  title={Fourier Prompt Tuning for Modality-Incomplete Scene Segmentation},
-  author={Liu, Ruiping and Zhang, Jiaming and Peng, Kunyu and Chen, Yufan and Cao, Ke and Zheng, Junwei and Sarfraz, M Saquib and Yang, Kailun and Stiefelhagen, Rainer},
-  journal={arXiv preprint arXiv:2401.16923},
-  year={2024}
-}
+@INPROCEEDINGS{10588722,
+  author={Liu, Ruiping and Zhang, Jiaming and Peng, Kunyu and Chen, Yufan and Cao, Ke and Zheng, Junwei and Sarfraz, M. Saquib and Yang, Kailun and Stiefelhagen, Rainer},
+  booktitle={2024 IEEE Intelligent Vehicles Symposium (IV)}, 
+  title={Fourier Prompt Tuning for Modality-Incomplete Scene Segmentation}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={961-968},
+  keywords={Training;Rain;Source coding;Semantic segmentation;Semantics;Switches;Benchmark testing},
+  doi={10.1109/IV55156.2024.10588722}}
 
 ```
